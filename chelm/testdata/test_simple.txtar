@@ -46,17 +46,17 @@ image: nginx:latest
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/nginx@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/nginx@sha256:5be1ecc7935f1dd85635d4feedaf660594030253cc97c9e9ca3819ffeac36b65"
       ],
       "expected": [
         "nginx"
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/nginx@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/nginx@sha256:5be1ecc7935f1dd85635d4feedaf660594030253cc97c9e9ca3819ffeac36b65"
         ],
         "structured": [
-          "cgr.test/chainguard/test/nginx@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/nginx@sha256:5be1ecc7935f1dd85635d4feedaf660594030253cc97c9e9ca3819ffeac36b65"
         ]
       }
     }

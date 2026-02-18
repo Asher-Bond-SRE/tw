@@ -98,9 +98,9 @@ hooks:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/multi-hook@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/post-upgrade@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/pre-install@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/multi-hook@sha256:d48bf38da8fcbad3b32c443bf2ee26571c066d889e3d9728304e0074e04afb67",
+        "cgr.test/chainguard/test/post-upgrade@sha256:9af7430d8ba77fd71decddb28a4d3f5099d8ae9479057d41db13a51a9dc463f0",
+        "cgr.test/chainguard/test/pre-install@sha256:43700cae8fc9a0b05431663b690bffb835935711644fd4a3cfc1b610060e0acf"
       ],
       "expected": [
         "pre-install",
@@ -109,14 +109,14 @@ hooks:
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/multi-hook@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/post-upgrade@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/pre-install@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/multi-hook@sha256:d48bf38da8fcbad3b32c443bf2ee26571c066d889e3d9728304e0074e04afb67",
+          "cgr.test/chainguard/test/post-upgrade@sha256:9af7430d8ba77fd71decddb28a4d3f5099d8ae9479057d41db13a51a9dc463f0",
+          "cgr.test/chainguard/test/pre-install@sha256:43700cae8fc9a0b05431663b690bffb835935711644fd4a3cfc1b610060e0acf"
         ],
         "structured": [
-          "cgr.test/chainguard/test/multi-hook@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/post-upgrade@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/pre-install@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/multi-hook@sha256:d48bf38da8fcbad3b32c443bf2ee26571c066d889e3d9728304e0074e04afb67",
+          "cgr.test/chainguard/test/post-upgrade@sha256:9af7430d8ba77fd71decddb28a4d3f5099d8ae9479057d41db13a51a9dc463f0",
+          "cgr.test/chainguard/test/pre-install@sha256:43700cae8fc9a0b05431663b690bffb835935711644fd4a3cfc1b610060e0acf"
         ]
       }
     }

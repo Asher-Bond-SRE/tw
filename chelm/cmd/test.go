@@ -239,8 +239,9 @@ Exit code is non-zero if any test case fails.`,
 				}
 				foundImageIDs[imageID] = true
 
-				// Check tag/digest matches test values
-				if ref.Digest != "" && ref.Digest != chelm.DefaultTestDigest {
+				// Check tag/digest matches per-imageID test values
+				expectedDigest := chelm.TestDigest(imageID).String()
+				if ref.Digest != "" && ref.Digest != expectedDigest {
 					caseOut.Passed = false
 					output.Passed = false
 				}

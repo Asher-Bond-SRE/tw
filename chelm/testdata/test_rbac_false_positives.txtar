@@ -115,17 +115,17 @@ image: quay.io/jetstack/cert-manager-controller:v1.14.0
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/controller@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/controller@sha256:c1472135b14c77c8bef98e73f70208325fa0dcf1e6bd668ae9b31a9cea295fe7"
       ],
       "expected": [
         "controller"
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/controller@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/controller@sha256:c1472135b14c77c8bef98e73f70208325fa0dcf1e6bd668ae9b31a9cea295fe7"
         ],
         "structured": [
-          "cgr.test/chainguard/test/controller@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/controller@sha256:c1472135b14c77c8bef98e73f70208325fa0dcf1e6bd668ae9b31a9cea295fe7"
         ]
       }
     }

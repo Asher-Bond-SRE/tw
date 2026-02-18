@@ -85,8 +85,8 @@ sidecar:
       "passed": true,
       "images": [
         "cgr.test/chainguard/test/app:v0.0.0",
-        "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/worker:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:6c8b4535ccc87f19061c4646189e33d78f01c8b63dc4e3cb2f630b1796ee93b6",
+        "cgr.test/chainguard/test/worker:v0.0.0@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
       ],
       "expected": [
         "app",
@@ -96,13 +96,13 @@ sidecar:
       "extractors": {
         "regex": [
           "cgr.test/chainguard/test/app:v0.0.0",
-          "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:6c8b4535ccc87f19061c4646189e33d78f01c8b63dc4e3cb2f630b1796ee93b6",
+          "cgr.test/chainguard/test/worker:v0.0.0@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
         ],
         "structured": [
           "cgr.test/chainguard/test/app:v0.0.0",
-          "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker:v0.0.0@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/sidecar:v0.0.0@sha256:6c8b4535ccc87f19061c4646189e33d78f01c8b63dc4e3cb2f630b1796ee93b6",
+          "cgr.test/chainguard/test/worker:v0.0.0@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
         ]
       }
     }

@@ -57,8 +57,8 @@ workers:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/worker1@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/worker2@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/worker1@sha256:34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad",
+        "cgr.test/chainguard/test/worker2@sha256:5257586a4579fd12221c855b9cacf4c5bba169e31d5ebde2acaa8d502e57dcbe"
       ],
       "expected": [
         "worker1",
@@ -66,12 +66,12 @@ workers:
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/worker1@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker2@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/worker1@sha256:34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad",
+          "cgr.test/chainguard/test/worker2@sha256:5257586a4579fd12221c855b9cacf4c5bba169e31d5ebde2acaa8d502e57dcbe"
         ],
         "structured": [
-          "cgr.test/chainguard/test/worker1@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker2@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/worker1@sha256:34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad",
+          "cgr.test/chainguard/test/worker2@sha256:5257586a4579fd12221c855b9cacf4c5bba169e31d5ebde2acaa8d502e57dcbe"
         ]
       }
     }
