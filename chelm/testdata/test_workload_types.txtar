@@ -153,12 +153,12 @@ replicaset:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/cronjob-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/daemonset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/job-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/pod-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/replicaset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/statefulset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/cronjob-app@sha256:15f34bd28d765a4b0979c50086cd1c0f43d8030719e6cfee96fe82b9f9d99c6a",
+        "cgr.test/chainguard/test/daemonset-app@sha256:81faa10cebe7e3f1e5dc70d2d03db0bdd7d7765f37cd78d41adbbf57e69c82c7",
+        "cgr.test/chainguard/test/job-app@sha256:fffe6d11f4fdf91c8b848099de17e0502df4e3124d8ed416fb9dcfdee7e6a513",
+        "cgr.test/chainguard/test/pod-app@sha256:d9a053a519405561a6712ab5853a833e56e1d65fd0ab0be2dfe2b03e8147fb71",
+        "cgr.test/chainguard/test/replicaset-app@sha256:27cde26f94931cf2707baf6f63950610e40993a81bfbb56f5e22a84b2b8fccf6",
+        "cgr.test/chainguard/test/statefulset-app@sha256:9efbc666e6b7ff69281d7f61a411678683f4a0cf284a3d0c8ba0af768433b9f8"
       ],
       "expected": [
         "statefulset-app",
@@ -170,20 +170,20 @@ replicaset:
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/cronjob-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/daemonset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/job-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/pod-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/replicaset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/statefulset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/cronjob-app@sha256:15f34bd28d765a4b0979c50086cd1c0f43d8030719e6cfee96fe82b9f9d99c6a",
+          "cgr.test/chainguard/test/daemonset-app@sha256:81faa10cebe7e3f1e5dc70d2d03db0bdd7d7765f37cd78d41adbbf57e69c82c7",
+          "cgr.test/chainguard/test/job-app@sha256:fffe6d11f4fdf91c8b848099de17e0502df4e3124d8ed416fb9dcfdee7e6a513",
+          "cgr.test/chainguard/test/pod-app@sha256:d9a053a519405561a6712ab5853a833e56e1d65fd0ab0be2dfe2b03e8147fb71",
+          "cgr.test/chainguard/test/replicaset-app@sha256:27cde26f94931cf2707baf6f63950610e40993a81bfbb56f5e22a84b2b8fccf6",
+          "cgr.test/chainguard/test/statefulset-app@sha256:9efbc666e6b7ff69281d7f61a411678683f4a0cf284a3d0c8ba0af768433b9f8"
         ],
         "structured": [
-          "cgr.test/chainguard/test/cronjob-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/daemonset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/job-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/pod-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/replicaset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/statefulset-app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/cronjob-app@sha256:15f34bd28d765a4b0979c50086cd1c0f43d8030719e6cfee96fe82b9f9d99c6a",
+          "cgr.test/chainguard/test/daemonset-app@sha256:81faa10cebe7e3f1e5dc70d2d03db0bdd7d7765f37cd78d41adbbf57e69c82c7",
+          "cgr.test/chainguard/test/job-app@sha256:fffe6d11f4fdf91c8b848099de17e0502df4e3124d8ed416fb9dcfdee7e6a513",
+          "cgr.test/chainguard/test/pod-app@sha256:d9a053a519405561a6712ab5853a833e56e1d65fd0ab0be2dfe2b03e8147fb71",
+          "cgr.test/chainguard/test/replicaset-app@sha256:27cde26f94931cf2707baf6f63950610e40993a81bfbb56f5e22a84b2b8fccf6",
+          "cgr.test/chainguard/test/statefulset-app@sha256:9efbc666e6b7ff69281d7f61a411678683f4a0cf284a3d0c8ba0af768433b9f8"
         ]
       }
     }

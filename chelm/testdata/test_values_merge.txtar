@@ -99,9 +99,9 @@ components:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/deep-nested@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/shared-parent@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/sibling-image@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/deep-nested@sha256:5a98a0f38eb5f4633d99aec8add183088ffdac6335922eacb5bc5aef13e01f73",
+        "cgr.test/chainguard/test/shared-parent@sha256:60abc2faae8ee2fdeba1def89d0bbf5dc1af1429abd642a1ad9c4050ab4c4784",
+        "cgr.test/chainguard/test/sibling-image@sha256:64f608b66a559028e9c606667a1c7b233a7ad9b57a3791c23b6bfd2eeeec3308"
       ],
       "expected": [
         "deep-nested",
@@ -110,14 +110,14 @@ components:
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/deep-nested@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/shared-parent@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/sibling-image@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/deep-nested@sha256:5a98a0f38eb5f4633d99aec8add183088ffdac6335922eacb5bc5aef13e01f73",
+          "cgr.test/chainguard/test/shared-parent@sha256:60abc2faae8ee2fdeba1def89d0bbf5dc1af1429abd642a1ad9c4050ab4c4784",
+          "cgr.test/chainguard/test/sibling-image@sha256:64f608b66a559028e9c606667a1c7b233a7ad9b57a3791c23b6bfd2eeeec3308"
         ],
         "structured": [
-          "cgr.test/chainguard/test/deep-nested@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/shared-parent@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/sibling-image@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/deep-nested@sha256:5a98a0f38eb5f4633d99aec8add183088ffdac6335922eacb5bc5aef13e01f73",
+          "cgr.test/chainguard/test/shared-parent@sha256:60abc2faae8ee2fdeba1def89d0bbf5dc1af1429abd642a1ad9c4050ab4c4784",
+          "cgr.test/chainguard/test/sibling-image@sha256:64f608b66a559028e9c606667a1c7b233a7ad9b57a3791c23b6bfd2eeeec3308"
         ]
       }
     }

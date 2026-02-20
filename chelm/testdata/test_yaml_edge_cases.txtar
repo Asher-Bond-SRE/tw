@@ -77,8 +77,8 @@ sidecar:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "cgr.test/chainguard/test/worker@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+        "cgr.test/chainguard/test/worker@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
       ],
       "expected": [
         "app",
@@ -86,12 +86,12 @@ sidecar:
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "cgr.test/chainguard/test/worker@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
         ],
         "structured": [
-          "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "cgr.test/chainguard/test/worker@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333",
+          "cgr.test/chainguard/test/worker@sha256:87eba76e7f3164534045ba922e7770fb58bbd14ad732bbf5ba6f11cc56989e6e"
         ]
       }
     }

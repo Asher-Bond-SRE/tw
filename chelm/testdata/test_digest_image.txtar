@@ -51,17 +51,17 @@ image:
       "name": "default",
       "passed": true,
       "images": [
-        "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333"
       ],
       "expected": [
         "app"
       ],
       "extractors": {
         "regex": [
-          "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333"
         ],
         "structured": [
-          "cgr.test/chainguard/test/app@sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "cgr.test/chainguard/test/app@sha256:a172cedcae47474b615c54d510a5d84a8dea3032e958587430b413538be3f333"
         ]
       }
     }

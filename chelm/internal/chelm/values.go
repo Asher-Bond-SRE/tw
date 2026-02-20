@@ -1,12 +1,14 @@
 package chelm
 
 import (
+	"crypto/sha256"
 	"fmt"
 	"strings"
 
 	"chainguard.dev/sdk/helm/images"
 	"dario.cat/mergo"
 	"github.com/google/go-containerregistry/pkg/name"
+	"github.com/opencontainers/go-digest"
 )
 
 // Test constants for generating marker values.
@@ -15,9 +17,13 @@ const (
 	DefaultTestRegistry   = "cgr.test"
 	DefaultTestRepository = "chainguard/test"
 	DefaultTestTag        = "v0.0.0"
-	DefaultTestDigest     = "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-	DefaultTestPseudoTag  = DefaultTestTag + "@" + DefaultTestDigest
 )
+
+// TestDigest returns a digest.Digest given an imageID.
+func TestDigest(imageID string) digest.Digest {
+	h := sha256.Sum256([]byte(imageID))
+	return digest.NewDigestFromBytes(digest.SHA256, h[:])
+}
 
 // GenerateValues creates Helm values for a test case.
 // Merges in order: image values < global test values < case values < extra values
@@ -75,7 +81,7 @@ func testResolver(registry name.Registry) images.WalkFunc {
 		for _, tok := range tokens {
 			switch v := tok.(type) {
 			case images.RefField:
-				sb.WriteString(resolveField(v, repo))
+				sb.WriteString(resolveField(v, imageID, repo))
 			default:
 				sb.WriteString(fmt.Sprint(v))
 			}
@@ -84,7 +90,8 @@ func testResolver(registry name.Registry) images.WalkFunc {
 	}
 }
 
-func resolveField(f images.RefField, repo name.Repository) string {
+func resolveField(f images.RefField, imageID string, repo name.Repository) string {
+	d := TestDigest(imageID)
 	switch f {
 	case images.Registry:
 		return repo.RegistryStr()
@@ -95,11 +102,11 @@ func resolveField(f images.RefField, repo name.Repository) string {
 	case images.Tag:
 		return DefaultTestTag
 	case images.Digest:
-		return DefaultTestDigest
+		return d.String()
 	case images.PseudoTag:
-		return DefaultTestPseudoTag
+		return DefaultTestTag + "@" + d.String()
 	case images.Ref:
-		return repo.Digest(DefaultTestDigest).Name()
+		return repo.Digest(d.String()).Name()
 	default:
 		return ""
 	}
